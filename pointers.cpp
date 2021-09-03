@@ -13,6 +13,7 @@ typedef struct Student {
 int promptInt(std::string message, int min, int max);
 double promptDouble(std::string message, double min, double max);
 void calculateStudentAverage(void *object, double *avg);
+void increment_all(int* start, int* stop);
 
 int main(int argc, char **argv)
 {
@@ -24,7 +25,22 @@ int main(int argc, char **argv)
     // Call `CalculateStudentAverage(???, ???)`
     // Output `average`
 
+    int a = 5;
+    int b = 10;
+
+    increment_all(&a, &b);
+
     return 0;
+}
+
+void increment_all(int* start, int* stop)
+{
+  int *current = start;
+  while (current != stop) {
+    ++(*current);  // increment value pointed
+    ++current;     // increment pointer
+    std::cout << *current;
+  }
 }
 
 /*
