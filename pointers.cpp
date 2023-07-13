@@ -1,7 +1,7 @@
 // compile: g++ -std=c++11 -o pointers pointers.cpp
 #include <iostream>
 #include <string>
-
+using namespace std;
 typedef struct Student {
     int id;
     char *f_name;
@@ -17,8 +17,8 @@ void calculateStudentAverage(void *object, double *avg);
 int main(int argc, char **argv)
 {
     Student student;
-    double average;
-
+    double average = 0;
+    cin >> student.id;
     // Sequence of user input -> store in fields of `student`
 
     // Call `CalculateStudentAverage(???, ???)`
