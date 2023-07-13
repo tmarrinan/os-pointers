@@ -19,6 +19,8 @@ int main(int argc, char **argv)
     Student student;
     double average = 0;
     cin >> student.id;
+    cin >> student.f_name;
+    cin >> student.l_name;
     // Sequence of user input -> store in fields of `student`
 
     // Call `CalculateStudentAverage(???, ???)`
